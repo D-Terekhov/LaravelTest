@@ -3,7 +3,7 @@
 
 1. Клонировать репозиторий в дерикторию локального веб сервера.
 
-    git clone https://github.com/d-terekhov/LaravelTest.git
+        git clone https://github.com/d-terekhov/LaravelTest.git
 
 2. Версия php - 8.1
    
