@@ -9,7 +9,7 @@
    
 3. Установить зависимости Composer.
 
-    composer install
+        composer install
 
 4. Настройка среды:
     - Скопировать файл .env.example. Переименовать его в .env
