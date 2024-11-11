@@ -51,4 +51,4 @@
         
 5. Запустить проект:
 
-   php artisan serve
+       php artisan serve
