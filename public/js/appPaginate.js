@@ -7,6 +7,9 @@ const AppPaginate = {
         token: csfr
     }
   },
+  // mounted(){
+  //   this.$refs.form.submit()
+  // },
   methods:{
     change() {
       this.$refs.form.submit()

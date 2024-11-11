@@ -8,7 +8,7 @@ class ForgotPasswordController extends Controller
 {
    
     public function create() {
-        return view('fogotpass');
+        return view('fogot-password');
     }
 
     public function store(Request $request) {

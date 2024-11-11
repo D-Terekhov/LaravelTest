@@ -10,12 +10,10 @@ const AppEloquent = {
     }
   },
   mounted(){
-    
     this.getFrequentWords ()
   },
   methods:{
     async addWord() {
-      console.log(this.word)
       await fetch('/api/addword', {
         method: 'POST',
         headers: {
@@ -32,7 +30,6 @@ const AppEloquent = {
     async getFrequentWords () {
       let response = await fetch('/api/frequent')
       this.frequentWords = await response.json()
-      console.log(this.frequentWords)
     }
   },
   delimiters: ["[[", "]]"],

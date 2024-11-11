@@ -12,11 +12,9 @@ Route::get('/', function () {
     return view('welcome');
 }) ->name('home');
 
-
 Route::get('/api/auth', function () {
     return view('login');
 }) ->name('login');
-
 
 Route::get('/api/user', [RegLogController::class, 'create']) ->middleware('guest');
 
@@ -35,7 +33,7 @@ Route::get('/reset-password', [ResetPasswordController::class, 'create']) ->midd
 Route::post('/reset-password', [ResetPasswordController::class, 'store']) ->middleware('guest') ->name('password.update');
 
 Route::get('/random-news', function () {
-    return view('randomNews');
+    return view('random-news');
 }) ->middleware('auth');
 
 Route::get('/api/news', [NewsController::class, 'news']) ->middleware('auth');
@@ -48,9 +46,4 @@ Route::get('/api/frequent', [EloquentController::class, 'getData']) ->middleware
 
 Route::post('/api/addword', [EloquentController::class, 'addWord']) ->middleware('auth');
 
-Route::match(array('GET', 'POST'),'/api/paginate', [EloquentController::class, 'getPage']) ->middleware('auth');
-
-Route::get('/paginate', function() {
-    return view('paginate');
-}) ->middleware('auth');
-
+Route::get('/paginate', [EloquentController::class, 'getPage']) ->middleware('auth');

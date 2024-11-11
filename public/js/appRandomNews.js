@@ -1,7 +1,6 @@
 let csfr = document.querySelector('meta[name="csrf-token"]').getAttribute('content')
 
 const AppRandomNews = {
-
   data() {
     return {
         news: [],
@@ -22,14 +21,12 @@ const AppRandomNews = {
   methods:{
     async getRandomNews() {
       this.randomNumber = this.getRandomInt(0,this.news.length) 
-
     },
     getRandomInt(min, max) {
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
   },
   delimiters: ["[[", "]]"]
-  
 }
  
 Vue.createApp(AppRandomNews).mount('#appRandomNews')
