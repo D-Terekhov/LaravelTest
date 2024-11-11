@@ -5,13 +5,15 @@
 
         git clone https://github.com/d-terekhov/LaravelTest.git
 
-2. Версия php - 8.1
-   
-3. Установить зависимости Composer.
+2. Зависимости:
+
+        PHP - 8.1
+        СУБД: MySQL - 8.2   
+4. Установить зависимости Composer.
 
         composer install
 
-4. Настройка среды:
+5. Настройка среды:
     - Скопировать файл .env.example. Переименовать его в .env
     - Настроить параметры для соединения с базой данных.
       - настроить параметры базы данных. Указать значения для DB_CONNECTION, DB_HOST, DB_PORT, DB_DATABASE, DB_USERNAME и DB_PASSWORD
@@ -49,6 +51,6 @@
      
             php artisan migrate
         
-5. Запустить проект:
+6. Запустить проект:
 
        php artisan serve
