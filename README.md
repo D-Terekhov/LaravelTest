@@ -14,12 +14,14 @@
     - Настроить параметры для соединения с базой данных.
       - настроить параметры базы данных. Указать значения для DB_CONNECTION, DB_HOST, DB_PORT, DB_DATABASE, DB_USERNAME и DB_PASSWORD
             Например:
+        
                 DB_CONNECTION=mysql
                 DB_HOST=mysql-8.2
                 DB_PORT=3306
                 DB_DATABASE=laraveltestgit
                 DB_USERNAME=root
                 DB_PASSWORD=
+        
       - В случае использования OpenServer версии 6. В параметре DB_HOST необходимо указать версию СУБД (Например: DB_HOST=mysql-8.2)
       - Для OpenServer версии 5 и ниже В параметре DB_HOST необходимо указать IP 127.0.0.1 (Например: DB_HOST=127.0.0.1)
     - Для проверки работоспособности функционала сброса пароля заменить секцию MAIL_ следующими настройками:
