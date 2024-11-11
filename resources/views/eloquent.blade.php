@@ -9,9 +9,6 @@
                 </form>
                 <div class="flex flex-col justify-center">
                     <h2 class="font-bold my-3 text-xl text-center">The list of the most popular words in the database in descending order of their frequency of use</h2>
-                    {{-- <div class="flex justify-center">
-                        <button class="px-3 my-3 rounded bg-gray-500 text-white hover:text-gray-300" v-on:click="getFrequentWords">Get data</button>
-                    </div> --}}
                     <div class="flex flex-col items-center">
                         <table>
                             <tr><th>Word</th><th>Count</th></tr>

@@ -1,7 +1,6 @@
 let csfr = document.querySelector('meta[name="csrf-token"]').getAttribute('content')
 
 const AppEloquent = {
-
   data() {
     return {
         word: '',
