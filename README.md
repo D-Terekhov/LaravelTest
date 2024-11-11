@@ -4,12 +4,14 @@
 1. Клонировать репозиторий в дерикторию локального веб сервера.
 
     git clone https://github.com/d-terekhov/LaravelTest.git
+
+2. Версия php - 8.1
    
-2. Установить зависимости Composer.
+3. Установить зависимости Composer.
 
     composer install
 
-3. Настройка среды:
+4. Настройка среды:
     - Скопировать файл .env.example. Переименовать его в .env
     - Настроить параметры для соединения с базой данных.
       - настроить параметры базы данных. Указать значения для DB_CONNECTION, DB_HOST, DB_PORT, DB_DATABASE, DB_USERNAME и DB_PASSWORD
@@ -47,6 +49,6 @@
      
             php artisan migrate
         
-4. Запустить проект:
+5. Запустить проект:
 
    php artisan serve
